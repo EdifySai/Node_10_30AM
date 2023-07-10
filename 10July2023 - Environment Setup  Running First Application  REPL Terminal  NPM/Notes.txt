@@ -1,0 +1,88 @@
+Environment Setup:
+
+Install Node.js: https://nodejs.org/en
+
+Running First Application:
+
+Create a Server and run it.
+
+
+cmd:  npm init -y 
+
+run:  node index.js 
+
+
+index.js:
+
+
+var http = require("http");
+var server = http.createServer(function (req, res) {
+    res.end("Hello World! I am from Node.JS");
+})
+server.listen(9012, function () {
+    console.log("server started");
+})
+
+// http://localhost:9012/
+
+
+package.json:
+
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+REPL Terminal: Its a Terminal provided by node to write quick code. 
+
+REPL - Read Evaluate Print Loop
+
+
+command: node and click on enter.
+
+
+NPM: Node Package Manager
+
+It is a repository of storing different packages (node projects).
+
+There are some individual developers who develops open source projects, 
+these projects are published in npm repository.
+
+command:  npm i nodejs-email-validation
+
+code:
+var emailValidator = require('nodejs-email-validation');
+
+var result = emailValidator.validate("sai@gil.com");
+
+console.log("result", result);
+
+Problem Statement: 
+
+Find an appropriate lib for password validation in npm repo and 
+Install it, use it.
+
+
+
+
+call backs:
+
+callback functions are used as an argument to another function. 
+
+In Node.js, we use callback functions to store the result of an operation.
+
+ 
+    arr.forEach(function(){
+      
+    })
+
+
+

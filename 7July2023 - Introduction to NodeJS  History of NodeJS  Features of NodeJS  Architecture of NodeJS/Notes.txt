@@ -1,0 +1,19 @@
+Introduction to Node.js: 
+
+Node.js is a server side runtime environment to run javascript on 
+server side environments.
+
+Node.js is not a programming language / framework / library. 
+
+Node.js was implemented by Ryan Dahl based on the drawbacks found in 
+java based architecture. 
+
+
+
+Traditional:
+
+ 1000 -> 100 volunteers  - 1 min * 100 = 100 * 10 = 1000 mins / 100 = 10 mins
+
+Modern: 
+
+1000 -> 100 volunteers: 2 sec * 1000 = 2000 sec / 100 = 20 sec
