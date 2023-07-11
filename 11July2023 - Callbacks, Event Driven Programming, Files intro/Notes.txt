@@ -1,0 +1,96 @@
+Callbacks:
+
+A callback is a function , which can be passed as an argument to 
+another function. 
+
+Callback functions are used to handle the result of a specific 
+operation.
+
+var arr = [10, 20, 30, 40, 50, 50, 40, 30, 203];
+
+arr.forEach(function (value) {
+    console.log(value);
+})
+
+Event Driven Programming:
+
+Event: Any action is considered as an event. whenever an event occurs 
+there should be an event handler. 
+
+
+var events = require('events');
+
+var eventEmitter = new events.EventEmitter();
+
+var connectCallback = function (data) {
+    console.log(data.username + " connected to the chat");
+}
+
+var disconnectCallback = function (data) {
+    console.log(data.username + " disconnected from the chat");
+}
+
+var messageCallback = function (data) {
+    console.log(data.username + " : " + data.message);
+}
+
+eventEmitter.on('connect', connectCallback);
+eventEmitter.on('disconnect', disconnectCallback);
+eventEmitter.on('message', messageCallback);
+eventEmitter.emit('connect', { username: "kiran" });
+eventEmitter.emit('message', { username: "kiran", message: "Hello Team, how are you doing today?" });
+eventEmitter.emit('disconnect', { username: 'kiran' });
+
+
+Problem statement: 
+
+Create the following events based on a private chat. 
+
+status -> active / inactive 
+
+send -> to send a message 
+
+type ->  user typing a message
+
+var events = require('events');
+var eventsEmitter = new events.EventEmitter();
+
+eventsEmitter.on('status', function (data) {
+    console.log(data.username + ":" + data.status);
+})
+
+eventsEmitter.on('send', function (data) {
+    console.log(data.username + ":" + data.message);
+})
+
+eventsEmitter.on('typing', function (data) {
+    console.log(data.username + " is typing........")
+})
+
+eventsEmitter.emit('status', { username: "kiran", status: 'active' });
+eventsEmitter.emit('status', { username: "rajesh", status: 'active' });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('send', { username: 'kiran', message: "How is your week going on?" });
+eventsEmitter.emit('send', { username: 'rajesh', message: "Too busy with meetings!" });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('typing', { username: "kiran" });
+eventsEmitter.emit('send', { username: 'kiran', message: "Take a break. I need to join a call. will ping you later" });
+eventsEmitter.emit('send', { username: 'rajesh', message: "Takecare Bye" });
+
+
+Working with FileSystem:
+
+Read file:
+
+
+
+
+
+
+
+
+
+
