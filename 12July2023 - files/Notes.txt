@@ -1,0 +1,84 @@
+File System: 
+
+
+Problem Statement: Read the data from a file and find the count of the characters in 
+the file.
+
+var fs = require('fs');
+
+fs.readFile("package.json", function (error, data) {
+
+    if (error) {
+        console.log(error);
+    }
+    else {
+        var fileData = data.toString();
+        console.log(fileData.length);
+        // fileData = fileData.toUpperCase();
+        console.log(fileData);
+        var uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        var lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        var digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+        var upperCaseCounter = 0;
+        var lowerCaseCounter = 0;
+        var digitCounter = 0;
+        for (var i = 0; i < fileData.length; i++) {
+            if (uppercase.includes(fileData[i])) {
+                upperCaseCounter++;
+            }
+            if (lowercase.includes(fileData[i])) {
+                lowerCaseCounter++;
+            }
+            if (digits.includes(fileData[i])) {
+                digitCounter++;
+            }
+        }
+        console.log("upperCaseCounter", upperCaseCounter);
+        console.log("lowerCaseCounter", lowerCaseCounter);
+        console.log("digitCounter", digitCounter);
+        console.log(fileData.length - (upperCaseCounter + lowerCaseCounter + digitCounter));
+    }
+})
+
+
+Write the data to a file:
+
+var fs = require('fs');
+
+// fs.writeFile('snippets.js', "console.log(100);", function (error) {
+//     if (error) {
+//         console.log(error);
+//     }
+//     else {
+//         console.log("file written");
+//     }
+// })
+
+
+fs.appendFile('snippets.js', "console.log(200)", function (error) {
+    if (error) {
+        console.log(error);
+    }
+    else {
+        console.log("file written");
+    }
+})
+
+
+Removing the file:
+
+var fs = require('fs');
+
+fs.unlink('snippets.js', function (error) {
+    if (error) {
+        console.log(error);
+    }
+    else {
+        console.log("fle removed");
+    }
+})
+
+
+Problem Statement:
+
+Read package.json file, write to a new file called new-package.json 
