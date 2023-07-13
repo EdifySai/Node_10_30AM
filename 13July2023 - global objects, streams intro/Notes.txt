@@ -1,0 +1,72 @@
+var fs = require('fs');
+fs.readFile("package.json", function (err, data) {
+    if (err) {
+        console.log(err);
+    }
+    else {
+        console.log(data.toString());
+
+        fs.writeFile('new-package.json', data.toString(), function (err) {
+            if (err) {
+                console.log("error", err);
+            }
+            else {
+                console.log("file created and updated");
+            }
+        })
+    }
+})
+
+Global Objects:
+
+
+// require()
+var fs = require("fs");
+console.log(__dirname);
+console.log(__filename);
+
+// setTimeout(function () {
+//     console.log("this is a set time out function");
+// }, 5000);
+
+setInterval(function () {
+    console.log("I am executed")
+}, 2000);
+
+
+Problem Statement: 
+
+use set interval and print the current time for every second in the following format
+
+ HH:MM:SS 
+
+
+setInterval(function () {
+    var date = new Date();
+    var time = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+    console.log(time);
+}, 1000);
+
+function addZero(input) {
+    if (input < 10) {
+        input = "0" + input;
+    }
+    return input;
+}
+
+Streams:
+A Stream is a flow of data.
+
+There are 4 types of streams. 
+
+1. Read Stream :
+
+
+2. Write Stream 
+3. Read / Write Stream 
+4. Transform 
+
+
+
+
+
