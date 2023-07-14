@@ -1,0 +1,44 @@
+var fs = require('fs');
+
+var readStream = fs.createReadStream("source.docx", { highWaterMark: 1024 * 1024 });
+
+var data = "";
+
+readStream.on('data', function (chunk) {
+data = data + chunk
+})
+
+readStream.on('end', function () {
+console.log("data", data);
+})
+
+readStream.on('error', function (error) {
+console.log("error", error);
+})
+
+
+
+
+ECommerce App:
+
+
+Agile: interval - 1 month
+
+User management - login (username, password) + feature, register - Release v1.0
+
+
+Product Management - add, update, remove,
+
+
+Seller Management - 2 months - relase
+
+
+Delivery Management
+
+
+Order Management
+
+
+1. client is invloved
+
+2. changes are welcome and implemented.

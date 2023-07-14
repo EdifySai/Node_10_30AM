@@ -1,0 +1,101 @@
+Streams continued: 
+
+WriteStream: 
+
+var fs = require('fs');
+var writeStream = fs.createWriteStream("abc.txt");
+var str = "gfhukjlnsdbjkjb bcdksnnk cvdekn vcmn kmnm,mln";
+writeStream.write(str);
+writeStream.end();
+writeStream.on('finish', function () {
+    console.log("writing finished");
+});
+
+
+Read and Write: 
+
+
+var fs = require('fs');
+
+var readStream = fs.createReadStream("source.docx");
+var writeStream = fs.createWriteStream("dest.docx");
+
+readStream.pipe(writeStream);
+
+
+Transform: 
+
+It is similar to read and write however before writing the data to a write stream, 
+if we want to perform any middleware operations, then we can use transform. 
+
+
+fs.createReadStream('input.txt')
+   .pipe()
+   .pipe(fs.createWriteStream('input.txt.gz'));
+
+PS:  Take package.json, remove the spaces (transform) and write it to the write stream. 
+
+Modules:
+
+Node provides predefined modules to work with applications. 
+
+os, url,http,fs......
+
+
+OS Module:
+
+
+var os = require('os');
+
+console.log(os.freemem());
+
+console.log(os.tmpdir());
+
+console.log(os.totalmem());
+
+console.log(os.version());
+
+console.log(os.cpus());
+
+
+Path Module:
+
+var path = require('path');
+
+console.log(path.extname("index.js"));
+
+console.log(path.isAbsolute("/Users/saikumar/Desktop/node_1030/Node_10_30AM/14July2023 /modules/pathmodule.js"));
+
+console.log(path.isAbsolute("Node_10_30AM/14July2023 /modules/pathmodule.js"));
+
+console.log(path.join("users", "naveen", "downloads", "abc.txt"));
+
+crypto module: 
+
+To perform encryption and decryption.
+
+// encryption
+var crypto = require('crypto');
+
+var mykey = crypto.createCipher('aes-128-cbc', 'mypassword');
+var mystr = mykey.update('abc', 'utf8', 'hex')
+mystr += mykey.final('hex');
+
+console.log(mystr);
+
+//34feb914c099df25794bf9ccb85bea72
+
+
+
+//  decryption
+var crypto = require('crypto');
+
+var mykey = crypto.createDecipher('aes-128-cbc', 'mypassword');
+var mystr = mykey.update('34feb914c099df25794bf9ccb85bea72', 'hex', 'utf8')
+mystr += mykey.final('utf8');
+
+console.log(mystr); //
+
+
+Debugger: We can debug node js code in VS Code using debug feature.
+
