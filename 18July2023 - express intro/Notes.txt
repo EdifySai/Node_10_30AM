@@ -1,0 +1,18 @@
+Express.js: 
+
+It is a server side javascript framework which is used to develop restful web services. 
+
+To use express, we need to install express from npmjs. 
+
+command: npm i express. 
+
+Since the webservices are served through http protocol, hence we need to understand http prootocol. 
+
+
+http prootocol provides the following methods to perform operations. 
+
+1. get  - to get the data
+2. post  - to post the data
+3. delete - to delete data 
+4. put - to update the data
+
