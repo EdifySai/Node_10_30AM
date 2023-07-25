@@ -1,0 +1,381 @@
+MongoDB:  MongoDB is a no-sql database ( no relationship between entities) which  allows us to 
+store both structured and unstructured data.
+
+Following is the DB Structure:
+
+  Database 
+
+  Collections 
+
+  Documents ( JSON Objects)
+
+
+
+Last login: Tue Jul 25 11:12:24 on ttys002
+-bash: 400:: command not found
+DLGBMBA003:~ saikumar$ ls
+Applications		Music			eclipse
+Desktop			Pictures		eclipse-workspace
+Documents		Postman			java1030am
+Downloads		Public			kvr-backend
+Library			ThisWeekend.txt		projects
+Movies			VirtualBox VMs
+MultiThreading.zip	assignments
+DLGBMBA003:~ saikumar$ cd Downloads/
+DLGBMBA003:Downloads saikumar$ ls
+20230703_120304.jpg
+20230703_120353.jpg
+20230703_121503.jpg
+DevOps Plan 2023.xlsx
+Ecommercebackendproject-master
+Ecommercebackendproject-master 2.zip
+Ecommercebackendproject-master.zip
+Free_Test_Data_1MB_DOCX-1.docx
+Java  Website and Brouchure Changes.docx
+Java + React + Node Website and Brouchure Changes.docx
+Java + React Website and Brouchure Changes.docx
+Java Course Curriculum.docx
+Java Curriculum  (1) (1).xlsx
+Java Curriculum  (1).xlsx
+Java Curriculum  (2).xlsx
+Java Curriculum .xlsx
+Java Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+Java-ECommerce-main
+Java-ECommerce-main.zip
+MEAN Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+MERN Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+Prerna School
+ReactJS Website and Brouchure Changes (1).docx
+ReactJS Website and Brouchure Changes (2).docx
+ReactJS updated curriculum.docx
+Untitled.sql
+WebSecurityDBConfigure.zip
+XXXPP7527X_2022-23_TIS (1).pdf
+XXXPP7527X_2022-23_TIS.pdf
+_Full Stack V2.0 - Web Site Content - Java Stack.docx
+apache-tomcat-9.0.73
+apache-tomcat-9.0.76
+demo
+demo (1).zip
+demo 2
+demo.zip
+digicart
+digicart.zip
+digital-lync-dev
+ecommerce
+ecommerce.zip
+html.docx
+jar_files.zip
+konalms.com-main
+mongo-java-driver-3.12.14.jar
+mongodb-macos-x86_64-4.4.21
+mysql-connector-j-8.0.31.jar
+mysql-connector.jar
+mysql-connector.jar.zip
+myw3schoolsimage (1).jpg
+myw3schoolsimage (2).jpg
+myw3schoolsimage.jpg
+navbar
+navbar.zip
+practice new.html
+rzp (1).csv
+rzp.csv
+servlet-api 2.jar
+servlet-api.jar
+servlet-api.jar (1).zip
+servlet-api.jar.zip
+spring-security-mysql-master.zip
+springboot-crud
+springboot-crud.zip
+springboot-demo
+springboot-demo.zip
+DLGBMBA003:Downloads saikumar$ ls
+20230703_120304.jpg
+20230703_120353.jpg
+20230703_121503.jpg
+DevOps Plan 2023.xlsx
+Ecommercebackendproject-master
+Ecommercebackendproject-master 2.zip
+Ecommercebackendproject-master.zip
+Free_Test_Data_1MB_DOCX-1.docx
+Java  Website and Brouchure Changes.docx
+Java + React + Node Website and Brouchure Changes.docx
+Java + React Website and Brouchure Changes.docx
+Java Course Curriculum.docx
+Java Curriculum  (1) (1).xlsx
+Java Curriculum  (1).xlsx
+Java Curriculum  (2).xlsx
+Java Curriculum .xlsx
+Java Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+Java-ECommerce-main
+Java-ECommerce-main.zip
+MEAN Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+MERN Stack- Day Wise- Course Plan _ Updated Curriculum.xlsx
+Prerna School
+ReactJS Website and Brouchure Changes (1).docx
+ReactJS Website and Brouchure Changes (2).docx
+ReactJS updated curriculum.docx
+Untitled.sql
+WebSecurityDBConfigure.zip
+XXXPP7527X_2022-23_TIS (1).pdf
+XXXPP7527X_2022-23_TIS.pdf
+_Full Stack V2.0 - Web Site Content - Java Stack.docx
+apache-tomcat-9.0.73
+apache-tomcat-9.0.76
+demo
+demo (1).zip
+demo 2
+demo.zip
+digicart
+digicart.zip
+digital-lync-dev
+ecommerce
+ecommerce.zip
+html.docx
+jar_files.zip
+konalms.com-main
+mongo-java-driver-3.12.14.jar
+mongodb-macos-x86_64-4.4.21
+mysql-connector-j-8.0.31.jar
+mysql-connector.jar
+mysql-connector.jar.zip
+myw3schoolsimage (1).jpg
+myw3schoolsimage (2).jpg
+myw3schoolsimage.jpg
+navbar
+navbar.zip
+practice new.html
+rzp (1).csv
+rzp.csv
+servlet-api 2.jar
+servlet-api.jar
+servlet-api.jar (1).zip
+servlet-api.jar.zip
+spring-security-mysql-master.zip
+springboot-crud
+springboot-crud.zip
+springboot-demo
+springboot-demo.zip
+DLGBMBA003:Downloads saikumar$ cd mongo
+-bash: cd: mongo: No such file or directory
+DLGBMBA003:Downloads saikumar$ cd mongodb-macos-x86_64-4.4.21/
+DLGBMBA003:mongodb-macos-x86_64-4.4.21 saikumar$ ls
+LICENSE-Community.txt	README			bin
+MPL-2			THIRD-PARTY-NOTICES	macos_mongodb.plist
+DLGBMBA003:mongodb-macos-x86_64-4.4.21 saikumar$ cd bin/
+DLGBMBA003:bin saikumar$ clear
+
+DLGBMBA003:bin saikumar$ ls
+install_compass	mongo		mongod		mongos
+DLGBMBA003:bin saikumar$ mongo
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.6.3
+Server has startup warnings: 
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] 
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] 
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2023-07-25T11:16:37.962+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2023-07-25T11:16:37.963+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2023-07-25T11:16:37.963+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2023-07-25T11:16:37.963+0530 I CONTROL  [initandlisten] 
+2023-07-25T11:16:37.963+0530 I CONTROL  [initandlisten] 
+2023-07-25T11:16:37.963+0530 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> cls
+
+> show dbs
+admin             0.000GB
+config            0.000GB
+ecommerce         0.000GB
+ecommerceproject  0.000GB
+flipkart          0.000GB
+local             0.000GB
+> use 11am
+switched to db 11am
+> show dbs;
+admin             0.000GB
+config            0.000GB
+ecommerce         0.000GB
+ecommerceproject  0.000GB
+flipkart          0.000GB
+local             0.000GB
+> db
+11am
+> db.createCollection('users');
+{ "ok" : 1 }
+> show dbs
+11am              0.000GB
+admin             0.000GB
+config            0.000GB
+ecommerce         0.000GB
+ecommerceproject  0.000GB
+flipkart          0.000GB
+local             0.000GB
+> db
+11am
+> use ecommerce
+switched to db ecommerce
+> db
+ecommerce
+> show collections
+items
+products
+tuts
+users
+> use 11am
+switched to db 11am
+> show collections
+users
+> db.users.insertOne({id:101, name:'kiran', address:'hyderabad'});
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("64bf63b423d2c02a52e224a1")
+}
+> db.users.insertOne({id:102, name:'rajesh', PAN:'AMJBDSKC124'});
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("64bf63f423d2c02a52e224a2")
+}
+> db.users.find();
+{ "_id" : ObjectId("64bf63b423d2c02a52e224a1"), "id" : 101, "name" : "kiran", "address" : "hyderabad" }
+{ "_id" : ObjectId("64bf63f423d2c02a52e224a2"), "id" : 102, "name" : "rajesh", "PAN" : "AMJBDSKC124" }
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "AMJBDSKC124"
+}
+> db.users.find({"id":101});
+{ "_id" : ObjectId("64bf63b423d2c02a52e224a1"), "id" : 101, "name" : "kiran", "address" : "hyderabad" }
+> db.users.find({"id":101}).pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+> db.users.find({"id":102}).pretty();
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "AMJBDSKC124"
+}
+> db.users.find({"id":103}).pretty();
+> db.users.update({"id":2},{$set:{"address":"banglore"}});
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> db.users.update({"id":102},{$set:{"address":"banglore"}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({"id":102}).pretty();
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "AMJBDSKC124",
+	"address" : "banglore"
+}
+> db.users.update({"id":102},{$set:{"PAN":"c444545AHG"}});
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({"id":102}).pretty();
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "c444545AHG",
+	"address" : "banglore"
+}
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "c444545AHG",
+	"address" : "banglore"
+}
+> db.users.insertOne({id:104, name:'ram', address:'chennai'});
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("64bf654623d2c02a52e224a3")
+}
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "c444545AHG",
+	"address" : "banglore"
+}
+{
+	"_id" : ObjectId("64bf654623d2c02a52e224a3"),
+	"id" : 104,
+	"name" : "ram",
+	"address" : "chennai"
+}
+> db.users.remove({"id":104});
+WriteResult({ "nRemoved" : 1 })
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "c444545AHG",
+	"address" : "banglore"
+}
+> db.users.find().pretty();
+{
+	"_id" : ObjectId("64bf63b423d2c02a52e224a1"),
+	"id" : 101,
+	"name" : "kiran",
+	"address" : "hyderabad"
+}
+{
+	"_id" : ObjectId("64bf63f423d2c02a52e224a2"),
+	"id" : 102,
+	"name" : "rajesh",
+	"PAN" : "c444545AHG",
+	"address" : "banglore"
+}
+> db.users.remove({});
+WriteResult({ "nRemoved" : 2 })
+> db.users.find().pretty();
+> 
+
+
+Problem Statement: 
+
+Create a database - digitallync
+
+collections - courses, students 
+
+  create, update, remove, listall courses and students. 
+
+  
