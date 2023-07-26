@@ -376,6 +376,6 @@ Create a database - digitallync
 
 collections - courses, students 
 
-  create, update, remove, listall courses and students. 
+  create, update, remove, list all courses and students. 
 
   
