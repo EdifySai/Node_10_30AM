@@ -1,0 +1,6 @@
+MVC: 
+Model View Controller 
+
+View - UI 
+Model - Database operations 
+Controller - mediator for request and response.
