@@ -28,7 +28,7 @@ var ProductSchema = new Schema(
 var ProductModel = mongoose.model('product', ProductSchema);
 
 app.get('/generate', async function (req, res) {
-    for (var i = 0; i < 100000; i++) {
+    for (var i = 0; i < 100000000; i++) {
         var obj = {
             pid: i,
             name: "product-" + i,
@@ -42,3 +42,4 @@ app.get('/generate', async function (req, res) {
 app.listen(9011, () => {
     console.log("server started");
 })
+
