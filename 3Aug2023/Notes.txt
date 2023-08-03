@@ -1,0 +1,182 @@
+Aggregation and Data Modelling in MongoDB:
+
+{
+	"_id" : ObjectId("64cb3edee0f4c1272aaed9da"),
+	"pid" : 101,
+	"name" : "product 1",
+	"brand" : "brand 1",
+	"price" : 2000
+}
+{
+	"_id" : ObjectId("64cb3ef2e0f4c1272aaed9db"),
+	"pid" : 102,
+	"name" : "product 2",
+	"brand" : "brand 1",
+	"price" : 3000
+}
+{
+	"_id" : ObjectId("64cb3f00e0f4c1272aaed9dc"),
+	"pid" : 103,
+	"name" : "product 3",
+	"brand" : "brand 1",
+	"price" : 4000
+}
+{
+	"_id" : ObjectId("64cb3f16e0f4c1272aaed9dd"),
+	"pid" : 104,
+	"name" : "product 4",
+	"brand" : "brand 2",
+	"price" : 5000
+}
+{
+	"_id" : ObjectId("64cb3f23e0f4c1272aaed9de"),
+	"pid" : 105,
+	"name" : "product 5",
+	"brand" : "brand 2",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f64e0f4c1272aaed9e3"),
+	"pid" : 110,
+	"name" : "product 10",
+	"brand" : "brand 4",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f73e0f4c1272aaed9e4"),
+	"pid" : 111,
+	"name" : "product 11",
+	"brand" : "brand 4",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f2fe0f4c1272aaed9df"),
+	"pid" : 106,
+	"name" : "product 6",
+	"brand" : "brand 2",
+	"price" : 7000
+}
+{
+	"_id" : ObjectId("64cb3f3ce0f4c1272aaed9e0"),
+	"pid" : 107,
+	"name" : "product 7",
+	"brand" : "brand 3",
+	"price" : 8000
+}
+{
+	"_id" : ObjectId("64cb3f4ae0f4c1272aaed9e1"),
+	"pid" : 108,
+	"name" : "product 8",
+	"brand" : "brand 4",
+	"price" : 9000
+}
+{
+	"_id" : ObjectId("64cb3f57e0f4c1272aaed9e2"),
+	"pid" : 109,
+	"name" : "product 9",
+	"brand" : "brand 4",
+	"price" : 9000
+}
+{
+	"_id" : ObjectId("64cb3f89e0f4c1272aaed9e5"),
+	"pid" : 112,
+	"name" : "product 12",
+	"brand" : "brand 5",
+	"price" : 166000
+}
+> db.products.find().sort({price:-1}).pretty();
+{
+	"_id" : ObjectId("64cb3f89e0f4c1272aaed9e5"),
+	"pid" : 112,
+	"name" : "product 12",
+	"brand" : "brand 5",
+	"price" : 166000
+}
+{
+	"_id" : ObjectId("64cb3f4ae0f4c1272aaed9e1"),
+	"pid" : 108,
+	"name" : "product 8",
+	"brand" : "brand 4",
+	"price" : 9000
+}
+{
+	"_id" : ObjectId("64cb3f57e0f4c1272aaed9e2"),
+	"pid" : 109,
+	"name" : "product 9",
+	"brand" : "brand 4",
+	"price" : 9000
+}
+{
+	"_id" : ObjectId("64cb3f3ce0f4c1272aaed9e0"),
+	"pid" : 107,
+	"name" : "product 7",
+	"brand" : "brand 3",
+	"price" : 8000
+}
+{
+	"_id" : ObjectId("64cb3f2fe0f4c1272aaed9df"),
+	"pid" : 106,
+	"name" : "product 6",
+	"brand" : "brand 2",
+	"price" : 7000
+}
+{
+	"_id" : ObjectId("64cb3f23e0f4c1272aaed9de"),
+	"pid" : 105,
+	"name" : "product 5",
+	"brand" : "brand 2",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f64e0f4c1272aaed9e3"),
+	"pid" : 110,
+	"name" : "product 10",
+	"brand" : "brand 4",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f73e0f4c1272aaed9e4"),
+	"pid" : 111,
+	"name" : "product 11",
+	"brand" : "brand 4",
+	"price" : 6000
+}
+{
+	"_id" : ObjectId("64cb3f16e0f4c1272aaed9dd"),
+	"pid" : 104,
+	"name" : "product 4",
+	"brand" : "brand 2",
+	"price" : 5000
+}
+{
+	"_id" : ObjectId("64cb3f00e0f4c1272aaed9dc"),
+	"pid" : 103,
+	"name" : "product 3",
+	"brand" : "brand 1",
+	"price" : 4000
+}
+{
+	"_id" : ObjectId("64cb3ef2e0f4c1272aaed9db"),
+	"pid" : 102,
+	"name" : "product 2",
+	"brand" : "brand 1",
+	"price" : 3000
+}
+{
+	"_id" : ObjectId("64cb3edee0f4c1272aaed9da"),
+	"pid" : 101,
+	"name" : "product 1",
+	"brand" : "brand 1",
+	"price" : 2000
+}
+
+
+PS: Find out how many products each brand has got in the above documents 
+list. 
+
+
+hint: aggregate() function 
+
+       $sum operator. 
+
+       
