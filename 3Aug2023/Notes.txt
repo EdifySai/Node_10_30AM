@@ -176,7 +176,6 @@ list.
 
 
 hint: aggregate() function 
-
        $sum operator. 
+> db.products.aggregate([{$group:{_id:"$brand",noOfProducts:{$sum:1}}}]);
 
-       
