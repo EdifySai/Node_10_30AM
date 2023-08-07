@@ -1,0 +1,41 @@
+Project Requirements: 
+
+1. User Management:
+
+            i. Register 
+            ii. Login 
+            iii. Forgot Password 
+            iv. Change Password 
+            v. User Roles 
+
+2. Product Management 
+
+                i.  Add Product 
+                ii. Update Product 
+                iii. View Product 
+                iv.  View List of Products 
+                v. Delete Product 
+
+3. Cart Management: 
+
+                   i. Add Product /  Products to Cart 
+                   ii. Remove Products from Cart 
+
+4. Payment Integration: 
+   
+                    RazorPay Payment Integration 
+
+5. Orders : 
+
+                    i.add an Order
+                    ii. get all orders 
+
+
+Best Coding Practices:
+
+1.  Follow MVC 
+2.  Proper Naming Conventions 
+3.  Externalizing the configuration into .env file 
+4.  Implementing async and await 
+5.  Error Handling
+6.

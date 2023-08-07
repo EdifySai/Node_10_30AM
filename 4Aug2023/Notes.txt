@@ -1,0 +1,69 @@
+
+
+Problem Statement:  Embedded
+
+
+Create an employee object where employee is mapped to multiple projects
+
+{
+   empid: 102, 
+   name:"Rajesh",
+   projects: [
+       {
+            name:"ecommerce", 
+            client:"DigitalLync"
+       }, 
+       {
+             name: "LMS",
+             client: "DigitalLync"
+       }, 
+       {
+             name: "CricClubs", 
+             client: "CricClubs"
+       }
+   ]
+}
+
+
+Solution:
+
+db.employees.find().pretty();
+{
+	"_id" : ObjectId("64cc94a56d4580c4c1d00cc9"),
+	"empid" : 101,
+	"name" : "Kiran Kumar",
+	"projects" : [
+		{
+			"name" : "CRM",
+			"client" : "DigitalLync"
+		},
+		{
+			"name" : "LMS",
+			"client" : "DigitalLync"
+		},
+		{
+			"name" : "CricClubs",
+			"client" : "CricClubs"
+		}
+	]
+}
+{
+	"_id" : ObjectId("64cc94d66d4580c4c1d00cca"),
+	"empid" : 102,
+	"name" : "Rajesh",
+	"projects" : [
+		{
+			"name" : "ecommerce",
+			"client" : "DigitalLync"
+		},
+		{
+			"name" : "LMS",
+			"client" : "DigitalLync"
+		},
+		{
+			"name" : "CricClubs",
+			"client" : "CricClubs"
+		}
+	]
+}
+
