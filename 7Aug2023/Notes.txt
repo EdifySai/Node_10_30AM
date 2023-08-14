@@ -2,15 +2,15 @@ Project Requirements:
 
 1. User Management:
 
-            i. Register 
-            ii. Login 
-            iii. Forgot Password 
-            iv. Change Password 
-            v. User Roles 
+            i. Register  (Completed)
+            ii. Login  (Completed)
+            iii. Forgot Password  (Completed)
+            iv. Change Password  (Completed)
+            v. User Roles (Completed)
 
 2. Product Management 
 
-                i.  Add Product 
+                i.  Add Product  (Completed)
                 ii. Update Product 
                 iii. View Product 
                 iv.  View List of Products 
