@@ -10,9 +10,11 @@ dotenv.config();
 db.connectToDB();
 var userRoute = require('./routes/user.route');
 var productRoute = require('./routes/product.route');
+var cartRoute = require('./routes/cart.route');
 app.use(express.json());
-app.use(userRoute);
-app.use(productRoute);
+app.use("/user", userRoute);
+app.use("/product", productRoute);
+app.use("/cart", cartRoute);
 
 const options = {
   definition: {
