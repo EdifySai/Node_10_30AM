@@ -1,5 +1,6 @@
 const express = require('express');
 var app = express();
+var cors = require('cors');
 
 var dotenv = require('dotenv');
 var db = require('./services/db');
@@ -11,10 +12,16 @@ db.connectToDB();
 var userRoute = require('./routes/user.route');
 var productRoute = require('./routes/product.route');
 var cartRoute = require('./routes/cart.route');
+var orderRoute = require('./routes/order.route');
+var paymentRoute = require('./routes/razorpay.route');
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 app.use("/user", userRoute);
 app.use("/product", productRoute);
 app.use("/cart", cartRoute);
+app.use("/order", orderRoute);
+app.use("/payment", paymentRoute);
 
 const options = {
   definition: {

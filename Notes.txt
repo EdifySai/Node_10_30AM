@@ -23,12 +23,12 @@ Project Requirements:
 
 4. Payment Integration: 
    
-                    RazorPay Payment Integration 
+                    RazorPay Payment Integration  (Completed)
 
 5. Orders : 
 
-                    i.add an Order
-                    ii. get all orders 
+                    i.add an Order (Completed)
+                    ii. get all orders  (Completed)
 
 
 Best Coding Practices:
